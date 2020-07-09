@@ -143,7 +143,7 @@
         <!-- Form Left -->
         <div class="card wow fadeInUp">
           <p>Fields marked with a &nbsp;<span style="color: red">*</span>&nbsp; required</p>
-          <form id="form-main" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+          <form id="form-main" method="POST" data-netlify="true">
             <div class="text-fields">
               <label for="name" class="required"></label>
               <input type="text" id="name" name="name" onkeypress="noDigits(event)" class="text-input name-input"
@@ -153,9 +153,9 @@
               <label for="message" class="required"></label>
               <textarea name="message" id="message" class="text-input message-input"
                 placeholder="Enter Message"></textarea>
-              <div class="my-2">
+              <!-- <div class="my-2">
                 <div data-netlify-recaptcha="true"></div>
-              </div>
+              </div> -->
             </div>
             <button type="submit" class="btn-contact">Submit</button>
           </form>
