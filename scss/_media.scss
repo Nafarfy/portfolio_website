@@ -1,0 +1,375 @@
+// Tabs 1024
+@media(max-width: 1024px) {
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          h1 {
+            font-size: 6rem;
+          }
+
+          p {
+            line-height: 1.7;
+            font-size: 2rem;
+          }
+
+          .btn {
+            &-main{
+              padding: 2rem 3rem;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+    // Contact
+    #contact {
+      &-a {
+        .container {
+          .items-flex {
+            .contact-info {
+              .center {
+                a {
+                  border-bottom: 1px solid $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+// Tabs
+@media(max-width: 800px) {
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          h1 {
+            font-size: 4rem;
+          }
+          p {
+            line-height: 1.7;
+            font-size: 22px;
+          }
+
+          .btn {
+            &-main{
+              padding: 1rem 2rem;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Contact
+  #contact {
+    &-a {
+      .container {
+        .items-flex {
+          .contact-info {
+            .center {
+              padding: 2rem;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Smartphones
+@media(max-width: 500px) {
+  // NavBar
+  .main-nav {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .social {
+        a:first-child,
+        a:nth-child(2) {
+          margin-right: 2rem !important;
+        }
+  
+        a:active {
+          color: $main-color;
+        }
+      }
+
+      ul {
+        li {
+          padding: 0 1rem !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          h1 {
+            font-size: 2rem !important;
+            // margin-bottom: 1rem;
+            padding: 2rem 0 1rem 0;
+          }
+  
+          p {
+            padding: 0 !important;
+            letter-spacing: 0.8px;
+            margin-bottom: 2rem;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  // Work
+  // Section A: Work
+  #work {
+    &-a {
+      .items-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+      }
+    }
+  }
+
+  // Contact
+  // Section A: Contact
+  #contact {
+    &-a {
+      .items-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+          width: 100% !important;
+        }
+
+        .contact-info {
+          width: 100% !important; 
+          margin-top: 10%;
+
+          .center {
+            padding: 2rem !important;
+
+            a {
+              border-bottom: 1px solid $main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Smaller smartphones
+@media(max-width: 372px) {
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          h1 {
+            padding-top: 40%;
+          }
+        }
+      }
+    }
+  }
+  // Contact
+  #contact {
+    &-a {
+      .items-flex {
+        .contact-info {
+          .center {
+            padding: 1.6rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// IPhone 5s
+@media(max-width: 322px) {
+  // NavBar
+  .main-nav {
+    .container {
+      ul {
+        li {
+          padding: 0 0.6rem !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          h1 {
+            font-size: 1.9rem !important;
+          }
+  
+          p {
+            line-height: 1.5 !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .items-flex {
+        .contact-info {
+          .center {
+            padding: 1.29rem !important;
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Landscape
+@media(max-height: 580px) {
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          padding-top: 6%;
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            line-height: 1.7;
+            font-size: 15px;
+          }
+
+          .btn {
+            &-main{
+              padding: 0.5rem 1rem;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Contact
+  #contact {
+    &-a {
+      .container {
+        .items-flex {
+          .contact-info {
+            .center {
+              padding: 2.5rem;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-height: 360px) {
+  // Contact
+  #contact {
+    &-a {
+      .container {
+        .items-flex {
+          .contact-info {
+            .center {
+              padding: 1rem;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-height: 322px) {
+  // Header
+  #header {
+    &-home {
+      .container {
+        .header-content {
+          padding-top: 6%;
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            line-height: 1.7;
+            font-size: 12px;
+            padding: 1rem;
+          }
+          .btn {
+            &-main{
+              padding: 0.5rem 1rem;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Work
+  // Section A: Work
+  #work {
+    &-a {
+      .container {
+        .items-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+  // Contact
+  #contact {
+    &-a {
+      .container {
+        .items-flex {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .card {
+            width: 100% !important;
+          }
+          .contact-info {
+            width: 100% !important; 
+            margin-top: 10%;
+            .center {
+              padding: 2rem !important;
+              a {
+                border-bottom: 1px solid $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

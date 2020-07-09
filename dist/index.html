@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Wow JS -->
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+
+  <title>Portfolio</title>
+</head>
+
+<body id="ontop">
+  <!-- Main Nav -->
+  <nav id="navbar" class="main-nav">
+    <div class="container">
+      <div class="social py-1">
+        <a href="https://www.instagram.com/danilzablotskiy/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://t.me/nafarfu" target="_blank"><i class="fab fa-telegram-plane fa-2x"></i></a>
+        <a href="https://github.com/Nafarfy" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      </div>
+      <ul>
+        <li><a href="#ontop">Home</a></li>
+        <li><a href="#skills-a">Skills</a></li>
+        <li><a href="#work-a">Work</a></li>
+        <li><a href="#contact-a">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="header-home">
+    <!-- Header Content -->
+    <div class="container">
+      <div class="header-content wow fadeInUp">
+        <h1>I Am <span>Danil Zablotskyi</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt labore vitae ratione rem esse perspiciatis
+          a porro fugiat expedita quibusdam qui magni corporis, velit recusandae suscipit quod debitis quasi at ducimus,
+          adipisci soluta? Consequuntur alias voluptatem incidunt dolor blanditiis dolores.</p>
+        <a href="#work-a" class="btn-main">View My Work</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Skills -->
+  <!-- Section A: Stats -->
+  <section id="skills-a">
+    <div class="container">
+      <h2 class="section-title pyb pyt">Technical Skills</h2>
+      <!-- Progress Bars -->
+      <h4 class="wow fadeInUp">HTML5 & CSS3: </h4>
+      <div class="progress wow fadeInUp">
+        <span class="complete" style="width: 100%"></span>
+      </div>
+      <h4 class="wow fadeInUp">Sass: </h4>
+      <div class="progress wow fadeInUp">
+        <span style="width: 95%"></span>
+      </div>
+      <h4 class="wow fadeInUp">Bootstrap: </h4>
+      <div class="progress wow fadeInUp">
+        <span style="width: 25%"></span>
+      </div>
+      <h4 class="wow fadeInUp">JavaScript: </h4>
+      <div class="progress wow fadeInUp">
+        <span style="width: 50%"></span>
+      </div>
+      <h4 class="wow fadeInUp">TypeScript: </h4>
+      <div class="progress wow fadeInUp">
+        <span style="width: 10%"></span>
+      </div>
+      <h4 class="wow fadeInUp">Angular: </h4>
+      <div class="progress wow fadeInUp">
+        <span style="width: 5%"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <!-- Section A: Work -->
+  <section id="work-a">
+    <div class="container">
+      <h2 class="section-title py-4">My Work</h2>
+      <div class="items-grid">
+        <div class="item wow fadeInUp">
+          <div class="item-img">
+            <img src="img/work/demo_landingPage_1.PNG" alt="demoLandingPage">
+          </div>
+          <div class="item-icon">
+            <a href="#"><i class="fas fa-expand fa-3x"></i></a>
+          </div>
+        </div>
+        <div class="item wow fadeInUp">
+          <div class="item-img">
+            <img src="img/work/demo_hotel_2.PNG" alt="demoLandingPage">
+          </div>
+          <div class="item-icon">
+            <a href="#"><i class="fas fa-expand fa-3x"></i></a>
+          </div>
+        </div>
+        <div class="item wow fadeInUp">
+          <div class="item-img">
+            <img src="img/work/demo_newsgrid_3.PNG" alt="demoLandingPage">
+          </div>
+          <div class="item-icon">
+            <a href="#"><i class="fas fa-expand fa-3x"></i></a>
+          </div>
+        </div>
+        <div class="item wow fadeInUp">
+          <div class="item-img">
+            <img src="img/work/demo_portfolioJoe_4.PNG" alt="demoLandingPage">
+          </div>
+          <div class="item-icon">
+            <a href="#"><i class="fas fa-expand fa-3x"></i></a>
+          </div>
+        </div>
+        <div class="item wow fadeInUp">
+          <div class="item-img">
+            <img src="img/work/demo_porfolioDanil_5.PNG" alt="demoLandingPage">
+          </div>
+          <div class="item-icon">
+            <a href="#"><i class="fas fa-expand fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- Section A: Contact -->
+  <section id="contact-a">
+    <div class="container">
+      <h2 class="section-title pyb pyt">Contact Me</h2>
+      <div class="items-flex">
+        <!-- Form Left -->
+        <div class="card wow fadeInUp">
+          <p>Fields marked with a &nbsp;<span style="color: red">*</span>&nbsp; required</p>
+          <form id="form-main" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <div class="text-fields">
+              <label for="name" class="required"></label>
+              <input type="text" id="name" name="name" onkeypress="noDigits(event)" class="text-input name-input"
+                placeholder="Name">
+              <label for="email" class="required"></label>
+              <input type="email" id="email" name="email" class="text-input email-input" placeholder="Email Address">
+              <label for="message" class="required"></label>
+              <textarea name="message" id="message" class="text-input message-input"
+                placeholder="Enter Message"></textarea>
+              <div>
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </div>
+            <button type="submit" class="btn-contact">Submit</button>
+          </form>
+        </div>
+        <!-- Contact Info Right -->
+        <div class="contact-info wow fadeInUp">
+          <div class="center">
+            <p>Email: &nbsp;<a href="mailto:thatsickdatsik@gmail.com">thatsickdatsik@gmail.com</a></p>
+            <p>Phone Number: &nbsp;<a href="tel:+380980258786">+380980258786</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer-main">
+    <div class="container">
+      <p>Copyright &copy; 2020 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- JQuary CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
