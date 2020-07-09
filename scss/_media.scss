@@ -24,6 +24,7 @@
       }
     }
   }
+  
     // Contact
     #contact {
       &-a {
@@ -86,12 +87,17 @@
 
 // Smartphones
 @media(max-width: 500px) {
+  .section-title {
+    font-size: 40px;
+  }
   // NavBar
-  .main-nav {
+  #navbar {
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0.5rem;
+
 
       .social {
         a:first-child,
@@ -107,7 +113,7 @@
       ul {
         li {
           padding: 0 1rem !important;
-          font-size: 18px !important;
+          font-size: 16px !important;
         }
       }
     }
@@ -139,8 +145,38 @@
   // Section A: Work
   #work {
     &-a {
-      .items-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
+      .container {
+        .items-grid {
+          grid-template-columns: repeat(1, 1fr) !important;
+          .item {
+            &:after {
+              content: '';
+              width: 0;
+              height: 0;
+            }
+
+            &:hover img {
+              transform: none;
+            }
+
+            &-icon {
+              top: 20px;
+              right: 40px;
+              a {
+                opacity: 1;
+                visibility: visible;
+                
+                i {
+                  color: $main-color;
+                }
+              }
+
+              a:hover i {
+                transform: none;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -251,6 +287,26 @@
 
 // Landscape
 @media(max-height: 580px) {
+  .section-title {
+    font-size: 40px;
+  }
+  // NavBar
+  .main-nav {
+    .container {
+      .social {
+      padding: 0.4rem 0;
+        a:active {
+          color: $main-color;
+        }
+      }
+      ul {
+        li {
+          padding: 0 0.6rem !important;
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
   // Header
   #header {
     &-home {
@@ -269,6 +325,45 @@
             &-main{
               padding: 0.5rem 1rem;
               font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Work
+  // Section A: Work
+  #work {
+    &-a {
+      .container {
+        .items-grid {
+          grid-template-columns: repeat(1, 1fr);
+          .item {
+            &:after {
+              content: '';
+              width: 0;
+              height: 0;
+            }
+            
+            &:hover img {
+              transform: none;
+            }
+
+            &-icon {
+              top: 20px;
+              right: 40px;
+              a {
+                opacity: 1;
+                visibility: visible;
+                
+                i {
+                  color: $main-color;
+                }
+              }
+
+              a:hover i {
+                transform: none;
+              }
             }
           }
         }
