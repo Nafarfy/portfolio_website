@@ -428,12 +428,20 @@
   #contact-a .container .items-flex .contact-info .center {
     padding: 2.5rem;
     font-size: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
   }
   #footer-main .container {
     padding: 0.7rem;
   }
   #footer-main .container p {
     padding: 0.2rem;
+    font-size: 14px;
   }
 }
 
