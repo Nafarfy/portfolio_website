@@ -320,8 +320,11 @@
   #header-home .container .header-content h1 {
     padding-top: 40%;
   }
-  #contact-a .items-flex .contact-info .center {
+  #contact-a .container .items-flex .contact-info .center {
     padding: 1.6rem !important;
+  }
+  #contact-a .container .items-flex .contact-info .center p {
+    font-size: 16px;
   }
 }
 

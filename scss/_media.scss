@@ -286,10 +286,16 @@
   // Contact
   #contact {
     &-a {
-      .items-flex {
-        .contact-info {
-          .center {
-            padding: 1.6rem !important;
+      .container {
+        .items-flex {
+          .contact-info {
+            .center {
+              padding: 1.6rem !important;
+
+              p {
+                font-size: 16px;
+              }
+            }
           }
         }
       }
