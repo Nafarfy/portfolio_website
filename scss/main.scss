@@ -140,7 +140,7 @@ img {
       }
 
       p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.7;
         padding: 1rem 5rem 2rem 5rem;
       }
@@ -328,17 +328,19 @@ img {
 
               &:hover {
                 border: $secondary-color 1px solid;
+                padding: 0.92rem;
               }
             }
 
             .text-input:focus {
               border: $secondary-color 1px solid;
+              padding: 0.92rem;
             }
 
             .required:after {
               content: '*';
               color: red;
-              padding: 0.5rem;
+              // padding: 0.5rem;
             }
 
             .message-input {
