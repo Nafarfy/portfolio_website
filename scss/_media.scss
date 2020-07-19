@@ -151,7 +151,7 @@
       .social {
         a:first-child,
         a:nth-child(2) {
-          margin-right: 2rem !important;
+          margin-right: 2rem ;
         }
   
         a:active {
@@ -161,8 +161,8 @@
 
       ul {
         li {
-          padding: 0 1rem !important;
-          font-size: 16px !important;
+          padding: 0 1rem;
+          font-size: 16px;
         }
       }
     }
@@ -174,13 +174,12 @@
       .container {
         .header-content {
           h1 {
-            font-size: 2rem !important;
-            // margin-bottom: 1rem;
+            font-size: 2rem ;
             padding: 2rem 0 1rem 0;
           }
   
           p {
-            padding: 0 !important;
+            padding: 0;
             letter-spacing: 0.8px;
             margin-bottom: 2rem;
             font-size: 16px;
@@ -196,7 +195,7 @@
     &-a {
       .container {
         .items-grid {
-          grid-template-columns: repeat(1, 1fr) !important;
+          grid-template-columns: repeat(1, 1fr);
           .item {
             &:after {
               content: '';
@@ -242,24 +241,26 @@
   // Section A: Contact
   #contact {
     &-a {
-      .items-flex {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .card {
-          width: 100% !important;
-        }
-
-        .contact-info {
-          width: 100% !important; 
-          margin-top: 10%;
-
-          .center {
-            padding: 2rem !important;
-
-            a {
-              border-bottom: 1px solid $main-color;
+      .container {
+        .items-flex {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+  
+          .card {
+            width: 100%;
+          }
+  
+          .contact-info {
+            width: 100%; 
+            margin-top: 10%;
+  
+            .center {
+              padding: 2rem;
+  
+              a {
+                border-bottom: 1px solid $main-color;
+              }
             }
           }
         }
@@ -290,7 +291,7 @@
         .items-flex {
           .contact-info {
             .center {
-              padding: 1.6rem !important;
+              padding: 1.6rem;
 
               p {
                 font-size: 16px;
@@ -310,8 +311,8 @@
     .container {
       ul {
         li {
-          padding: 0 0.6rem !important;
-          font-size: 18px !important;
+          padding: 0 0.6rem;
+          font-size: 18px;
         }
       }
     }
@@ -322,11 +323,11 @@
       .container {
         .header-content {
           h1 {
-            font-size: 1.9rem !important;
+            font-size: 1.9rem;
           }
   
           p {
-            line-height: 1.5 !important;
+            line-height: 1.5;
           }
         }
       }
@@ -340,8 +341,8 @@
         .items-flex {
           .contact-info {
             .center {
-              padding: 1.29rem !important;
-              font-size: 16px !important;
+              padding: 1.29rem;
+              font-size: 16px;
             }
           }
         }
@@ -366,8 +367,8 @@
       }
       ul {
         li {
-          padding: 0 0.6rem !important;
-          font-size: 14px !important;
+          padding: 0 0.6rem;
+          font-size: 14px;
         }
       }
     }
@@ -550,13 +551,13 @@
           align-items: center;
           justify-content: center;
           .card {
-            width: 100% !important;
+            width: 100%;
           }
           .contact-info {
-            width: 100% !important; 
+            width: 100%; 
             margin-top: 10%;
             .center {
-              padding: 2rem !important;
+              padding: 2rem;
               a {
                 border-bottom: 1px solid $main-color;
               }

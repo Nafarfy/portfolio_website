@@ -234,28 +234,28 @@
   }
   #navbar .container .social a:first-child,
   #navbar .container .social a:nth-child(2) {
-    margin-right: 2rem !important;
+    margin-right: 2rem;
   }
   #navbar .container .social a:active {
     color: #04abec;
   }
   #navbar .container ul li {
-    padding: 0 1rem !important;
-    font-size: 16px !important;
+    padding: 0 1rem;
+    font-size: 16px;
   }
   #header-home .container .header-content h1 {
-    font-size: 2rem !important;
+    font-size: 2rem;
     padding: 2rem 0 1rem 0;
   }
   #header-home .container .header-content p {
-    padding: 0 !important;
+    padding: 0;
     letter-spacing: 0.8px;
     margin-bottom: 2rem;
     font-size: 16px;
   }
   #work-a .container .items-grid {
-    -ms-grid-columns: (1fr)[1] !important;
-        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   #work-a .container .items-grid .item:after {
     content: '';
@@ -289,7 +289,7 @@
     -webkit-transform: none;
             transform: none;
   }
-  #contact-a .items-flex {
+  #contact-a .container .items-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -301,17 +301,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #contact-a .items-flex .card {
-    width: 100% !important;
+  #contact-a .container .items-flex .card {
+    width: 100%;
   }
-  #contact-a .items-flex .contact-info {
-    width: 100% !important;
+  #contact-a .container .items-flex .contact-info {
+    width: 100%;
     margin-top: 10%;
   }
-  #contact-a .items-flex .contact-info .center {
-    padding: 2rem !important;
+  #contact-a .container .items-flex .contact-info .center {
+    padding: 2rem;
   }
-  #contact-a .items-flex .contact-info .center a {
+  #contact-a .container .items-flex .contact-info .center a {
     border-bottom: 1px solid #04abec;
   }
 }
@@ -321,7 +321,7 @@
     padding-top: 40%;
   }
   #contact-a .container .items-flex .contact-info .center {
-    padding: 1.6rem !important;
+    padding: 1.6rem;
   }
   #contact-a .container .items-flex .contact-info .center p {
     font-size: 16px;
@@ -330,18 +330,18 @@
 
 @media (max-width: 322px) {
   .main-nav .container ul li {
-    padding: 0 0.6rem !important;
-    font-size: 18px !important;
+    padding: 0 0.6rem;
+    font-size: 18px;
   }
   #header-home .container .header-content h1 {
-    font-size: 1.9rem !important;
+    font-size: 1.9rem;
   }
   #header-home .container .header-content p {
-    line-height: 1.5 !important;
+    line-height: 1.5;
   }
   #contact-a .container .items-flex .contact-info .center {
-    padding: 1.29rem !important;
-    font-size: 16px !important;
+    padding: 1.29rem;
+    font-size: 16px;
   }
 }
 
@@ -356,8 +356,8 @@
     color: #04abec;
   }
   .main-nav .container ul li {
-    padding: 0 0.6rem !important;
-    font-size: 14px !important;
+    padding: 0 0.6rem;
+    font-size: 14px;
   }
   #header-home .container .header-content {
     padding-top: 6%;
@@ -488,14 +488,14 @@
             justify-content: center;
   }
   #contact-a .container .items-flex .card {
-    width: 100% !important;
+    width: 100%;
   }
   #contact-a .container .items-flex .contact-info {
-    width: 100% !important;
+    width: 100%;
     margin-top: 10%;
   }
   #contact-a .container .items-flex .contact-info .center {
-    padding: 2rem !important;
+    padding: 2rem;
   }
   #contact-a .container .items-flex .contact-info .center a {
     border-bottom: 1px solid #04abec;
