@@ -774,10 +774,15 @@ img {
           transform: scale(1.2);
 }
 
+#work-a .items-grid .item-img {
+  height: 100%;
+}
+
 #work-a .items-grid .item-img img {
   -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
   display: block;
+  height: 100%;
 }
 
 #work-a .items-grid .item-icon {

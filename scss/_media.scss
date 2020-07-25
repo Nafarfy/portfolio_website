@@ -171,10 +171,11 @@
   // Header
   #header {
     &-home {
+
       .container {
         .header-content {
           h1 {
-            font-size: 2rem ;
+            font-size: 2rem;
             padding: 2rem 0 1rem 0;
           }
   
@@ -352,6 +353,7 @@
 }
 
 // Landscape
+// Normal
 @media(max-height: 500px) {
   .section-title {
     font-size: 40px;
@@ -487,6 +489,7 @@
   }
 }
 
+// Smaller
 @media(max-height: 360px) {
   // Contact
   #contact {
@@ -505,6 +508,7 @@
   }
 }
 
+// 5s
 @media(max-height: 322px) {
   // Header
   #header {
