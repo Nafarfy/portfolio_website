@@ -319,6 +319,7 @@ img {
 
             .text-input {
               border: none;
+              border: #000 1px solid;
               box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
               background: #1a1a1a;
               color: $secondary-color;
@@ -329,22 +330,20 @@ img {
               outline: none;
               font-size: 16px;
               font-family: 'Roboto', sans-serif;
+              transition: all .3s;
 
               &:hover {
                 border: $secondary-color 1px solid;
-                padding: 0.92rem;
+              }
+              &:focus {
+                border: $secondary-color 1px solid;
               }
             }
 
-            .text-input:focus {
-              border: $secondary-color 1px solid;
-              padding: 0.92rem;
-            }
 
             .required:after {
               content: '*';
               color: red;
-              // padding: 0.5rem;
             }
 
             .message-input {
