@@ -368,8 +368,12 @@ img {
           border: 3px solid $secondary-color;
 
           p {
-            a:hover {
+
+            a {
               color: $main-color;
+            }
+            a:hover {
+              color: $secondary-color;
             }
           }
         }

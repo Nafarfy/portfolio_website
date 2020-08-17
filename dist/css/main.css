@@ -924,8 +924,12 @@ img {
   border: 3px solid #1592ad;
 }
 
-#contact-a .items-flex .contact-info .center p a:hover {
+#contact-a .items-flex .contact-info .center p a {
   color: #04abec;
+}
+
+#contact-a .items-flex .contact-info .center p a:hover {
+  color: #1592ad;
 }
 
 #footer-main {
