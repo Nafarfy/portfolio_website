@@ -1,5 +1,5 @@
 // Tabs 1024
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   // Header
   #header {
     &-home {
@@ -15,7 +15,7 @@
           }
 
           .btn {
-            &-main{
+            &-main {
               padding: 2rem 3rem;
               font-size: 18px;
             }
@@ -24,27 +24,27 @@
       }
     }
   }
-  
-    // Contact
-    #contact {
-      &-a {
-        .container {
-          .items-flex {
-            .contact-info {
-              .center {
-                a {
-                  border-bottom: 1px solid $main-color;
-                }
+
+  // Contact
+  #contact {
+    &-a {
+      .container {
+        .items-flex {
+          .contact-info {
+            .center {
+              a {
+                border-bottom: 1px solid $main-color;
               }
             }
           }
         }
       }
     }
+  }
 }
 
 // Tabs
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   // Header
   #header {
     &-home {
@@ -59,7 +59,7 @@
           }
 
           .btn {
-            &-main{
+            &-main {
               padding: 1rem 2rem;
               font-size: 14px;
             }
@@ -76,7 +76,7 @@
         .items-grid {
           .item {
             &:after {
-              content: '';
+              content: "";
               width: 0;
               height: 0;
             }
@@ -101,7 +101,7 @@
                 visibility: visible;
                 width: 100%;
                 height: 100%;
-                
+
                 i {
                   color: $main-color;
                   visibility: hidden;
@@ -135,7 +135,7 @@
 }
 
 // Smartphones
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .section-title {
     font-size: 40px;
   }
@@ -147,13 +147,15 @@
       align-items: center;
       padding: 0.5rem;
 
-
       .social {
-        a:first-child,
-        a:nth-child(2) {
-          margin-right: 2rem ;
+        a {
+          margin-right: 2rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
-  
+
         a:active {
           color: $main-color;
         }
@@ -171,14 +173,13 @@
   // Header
   #header {
     &-home {
-
       .container {
         .header-content {
           h1 {
             font-size: 2rem;
             padding: 2rem 0 1rem 0;
           }
-  
+
           p {
             padding: 0;
             letter-spacing: 0.8px;
@@ -199,7 +200,7 @@
           grid-template-columns: repeat(1, 1fr);
           .item {
             &:after {
-              content: '';
+              content: "";
               width: 0;
               height: 0;
             }
@@ -221,7 +222,7 @@
                 visibility: visible;
                 width: 100%;
                 height: 100%;
-                
+
                 i {
                   color: $main-color;
                   visibility: hidden;
@@ -247,18 +248,18 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-  
+
           .card {
             width: 100%;
           }
-  
+
           .contact-info {
-            width: 100%; 
+            width: 100%;
             margin-top: 10%;
-  
+
             .center {
               padding: 2rem;
-  
+
               a {
                 border-bottom: 1px solid $main-color;
               }
@@ -270,9 +271,8 @@
   }
 }
 
-
 // Smaller smartphones
-@media(max-width: 372px) {
+@media (max-width: 372px) {
   // Header
   #header {
     &-home {
@@ -306,7 +306,7 @@
 }
 
 // IPhone 5s
-@media(max-width: 322px) {
+@media (max-width: 322px) {
   // NavBar
   .main-nav {
     .container {
@@ -326,7 +326,7 @@
           h1 {
             font-size: 1.9rem;
           }
-  
+
           p {
             line-height: 1.5;
           }
@@ -354,7 +354,7 @@
 
 // Landscape
 // Normal
-@media(max-height: 500px) {
+@media (max-height: 500px) {
   .section-title {
     font-size: 40px;
   }
@@ -362,7 +362,7 @@
   .main-nav {
     .container {
       .social {
-      padding: 0.4rem 0;
+        padding: 0.4rem 0;
         a:active {
           color: $main-color;
         }
@@ -390,7 +390,7 @@
           }
 
           .btn {
-            &-main{
+            &-main {
               padding: 0.5rem 1rem;
               font-size: 12px;
             }
@@ -408,11 +408,11 @@
           grid-template-columns: repeat(2, 1fr);
           .item {
             &:after {
-              content: '';
+              content: "";
               width: 0;
               height: 0;
             }
-            
+
             &:hover img {
               transform: none;
             }
@@ -430,7 +430,7 @@
                 visibility: visible;
                 width: 100%;
                 height: 100%;
-                
+
                 i {
                   color: $main-color;
                   visibility: hidden;
@@ -459,7 +459,7 @@
           }
 
           .contact-info {
-            width: 100%; 
+            width: 100%;
             margin-top: 10%;
 
             .center {
@@ -476,9 +476,9 @@
   }
 
   // Footer
-#footer {
-    &-main{
-      .container { 
+  #footer {
+    &-main {
+      .container {
         padding: 0.7rem;
         p {
           padding: 0.2rem;
@@ -490,7 +490,7 @@
 }
 
 // Smaller
-@media(max-height: 360px) {
+@media (max-height: 360px) {
   // Contact
   #contact {
     &-a {
@@ -509,7 +509,7 @@
 }
 
 // 5s
-@media(max-height: 322px) {
+@media (max-height: 322px) {
   // Header
   #header {
     &-home {
@@ -525,7 +525,7 @@
             padding: 1rem;
           }
           .btn {
-            &-main{
+            &-main {
               padding: 0.5rem 1rem;
               font-size: 10px;
             }
@@ -558,7 +558,7 @@
             width: 100%;
           }
           .contact-info {
-            width: 100%; 
+            width: 100%;
             margin-top: 10%;
             .center {
               padding: 2rem;
