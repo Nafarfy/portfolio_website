@@ -52,7 +52,7 @@
   transition: all 700ms ease-in-out;
   padding: 1rem 2rem;
   position: relative;
-  border: 1.5px solid #1592ad;
+  border: 1px solid #1592ad;
   text-align: center;
   text-transform: uppercase;
   overflow: hidden;
@@ -60,7 +60,7 @@
 }
 
 .btn-main:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 100%;
@@ -80,7 +80,7 @@
 }
 
 .btn-main:hover:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -602,6 +602,10 @@ img {
   text-transform: uppercase;
 }
 
+.main-nav .container ul li:last-child {
+  padding: 0 0 0 1.5rem;
+}
+
 .main-nav .container ul li a {
   text-decoration: none;
   padding-bottom: 2px;
@@ -771,6 +775,7 @@ img {
 #work-a .items-grid .item:hover p {
   font-size: 2rem;
   border: 6px solid #f4f4f4;
+  background: #fdfdfd31;
 }
 
 #work-a .items-grid .item-img {
@@ -796,11 +801,10 @@ img {
   padding: 5px 10px;
   font-size: 0;
   color: #f4f4f4;
-  background: #fdfdfd31;
   border: 0 solid #f4f4f4;
   border-radius: 5px;
-  -webkit-transition: font-size 0.5s, border 0.5s;
-  transition: font-size 0.5s, border 0.5s;
+  -webkit-transition: background 0.5s, font-size 0.5s, border 0.5s;
+  transition: background 0.5s, font-size 0.5s, border 0.5s;
   z-index: 1;
 }
 
@@ -882,7 +886,6 @@ img {
 }
 
 #contact-a .items-flex .contact-info {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
