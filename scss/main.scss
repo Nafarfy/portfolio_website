@@ -1,6 +1,6 @@
-@import 'config';
-@import 'utilities';
-@import 'media';
+@import "config";
+@import "utilities";
+@import "media";
 
 // General Styles
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: $light-color;
   background: $dark-color;
@@ -21,11 +21,11 @@ body {
   width: 10px;
 
   &-thumb {
-    background: #383838; 
+    background: #383838;
     border-radius: 10px;
 
     &:hover {
-      background: $secondary-color; 
+      background: $secondary-color;
       cursor: pointer;
     }
   }
@@ -57,14 +57,13 @@ img {
     justify-content: space-between;
 
     .social {
-
       a {
-        transition: all .3s;
+        margin-right: 1rem;
+        transition: color 0.3s;
       }
 
-      a:first-child,
-      a:nth-child(2) {
-        margin-right: 1rem;
+      a:last-child {
+        margin-right: none;
       }
 
       a:hover {
@@ -88,8 +87,7 @@ img {
           background-position: 100% 100%;
           background-repeat: no-repeat;
           background-size: 0% 2px;
-          transition: background-size .3s;
-
+          transition: background-size 0.3s;
 
           &:hover {
             background-size: 100% 2px;
@@ -106,7 +104,7 @@ img {
   background: $dark-color;
   width: 100%;
   position: fixed;
-  box-shadow: -1px -2px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px -2px 30px 0px rgba(0, 0, 0, 0.75);
   transition: all 700ms;
 }
 
@@ -120,8 +118,7 @@ img {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url('../img/showcase_test_4.jpg') no-repeat 30% 30%/cover;
-    
+    background: url("../img/showcase_test_4.jpg") no-repeat 30% 30% / cover;
 
     .header-content {
       text-align: center;
@@ -133,7 +130,7 @@ img {
       h1 {
         font-size: 4rem;
         line-height: 1.2;
-        
+
         span {
           color: $main-color;
         }
@@ -148,25 +145,25 @@ img {
   }
 
   &-home:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
 }
 
 // Skills
-// Section A: Stats 
+// Section A: Stats
 #skills {
   &-a {
     background: $dark-color;
     position: relative;
     top: 100vh;
-    box-shadow: 1px -2px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px -2px 30px 0px rgba(0, 0, 0, 0.75);
 
     // Progress bar
     .progress {
@@ -183,21 +180,34 @@ img {
         height: 25px;
         width: 200px;
         border-radius: 3px;
-        box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-        transition: width .4s ease-in-out;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+        transition: width 0.4s ease-in-out;
         // background-color: #34c2e3;
         background-color: #1592ad;
-        
+
         background-size: 30px 30px;
-        background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%,transparent);
+        background-image: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
         animation: animate-stripes 3s linear infinite;
       }
     }
 
-
     // Animate progress bar
     @keyframes animate-stripes {
-      0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 60px 0;
+      }
     }
   }
 }
@@ -206,8 +216,7 @@ img {
 // Section A: Work
 
 #work {
-
-  &-a{
+  &-a {
     position: relative;
     top: 100vh;
     background: $dark-color;
@@ -218,74 +227,46 @@ img {
       grid-gap: 1rem;
 
       .item {
-        position: relative;
-        background: $main-color;
+        background: #0082b6;
         overflow: hidden;
-        box-shadow: -1px 1px 12px 4px rgba(0,0,0,0.75);
+        box-shadow: -1px 1px 12px 4px rgba(0, 0, 0, 0.75);
 
-        // Background main color
-        &:after {
-          content: '';
-          position: absolute;
-          display: block;
-          background: inherit;
-          opacity: 0;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: all 800ms ease;
-        }
-
-        // Bring main color on hover
-        &:hover:after {
-          opacity: 0.7;
-        }
-
-        // Scale img on hover 
         &:hover img {
           transform: scale(1.2);
+          opacity: 0.5;
+        }
+        &:hover p {
+          font-size: 2rem;
+          border: 6px solid $light-color;
         }
 
         &-img {
           height: 100%;
 
-            img {
-              transition: all 1.5s ease;
-              display: block;
-              height: 100%;
-            }
-        }
-
-        &-icon {
-          position: absolute;
-          top: 44%;
-          right: 50%;
-          z-index: 1;
-
-          // Icon invis on hover 
           a {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 1s ease;
             position: relative;
-            // top: 50%;
-            left: 50%;
-            
-            i {
-              transition: all 700ms ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            p {
+              position: absolute;
+              padding: 5px 10px;
+              font-size: 0;
+              color: $light-color;
+              background: #fdfdfd31;
+              border: 0 solid $light-color;
+              border-radius: 5px;
+              transition: font-size 0.5s, border 0.5s;
+              z-index: 1;
+            }
+
+            img {
+              height: 100%;
+              transition: transform 0.5s, opacity 0.5s ease;
             }
           }
-
-          a:hover i {
-            transform: scale(1.2);
-          }
-        }
-
-        // Icon visible on hover
-        &:hover a {
-          opacity: 1;
-          visibility: visible;
         }
       }
     }
@@ -310,7 +291,7 @@ img {
         color: $light-color;
 
         #form-main {
-          .text-fields{
+          .text-fields {
             display: flex;
             flex-direction: column;
 
@@ -326,8 +307,8 @@ img {
               border-radius: 5px;
               outline: none;
               font-size: 16px;
-              font-family: 'Roboto', sans-serif;
-              transition: all .3s;
+              font-family: "Roboto", sans-serif;
+              transition: all 0.3s;
 
               &:hover {
                 border: $secondary-color 1px solid;
@@ -337,9 +318,8 @@ img {
               }
             }
 
-
             .required:after {
-              content: '*';
+              content: "*";
               color: red;
             }
 
@@ -347,7 +327,7 @@ img {
               height: 12rem;
               font-size: 17px;
               resize: none;
-              font-family: 'Roboto', sans-serif;
+              font-family: "Roboto", sans-serif;
             }
           }
         }
@@ -368,7 +348,6 @@ img {
           border: 3px solid $secondary-color;
 
           p {
-
             a {
               color: $main-color;
             }
@@ -384,12 +363,11 @@ img {
 
 // Footer
 #footer {
-  &-main{
-
+  &-main {
     position: relative;
     top: 100vh;
     background: $dark-color;
-    box-shadow: -1px 13px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 13px 30px 0px rgba(0, 0, 0, 0.75);
     text-align: center;
 
     p {
